@@ -1,0 +1,220 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #6895A8;
+}
+.formContainer {
+	background: #fff;
+    max-width: 700px;
+    margin: 12px auto 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 #9f9f9f;
+}
+.formCreatAccountContainer {
+	border-radius: 12px;
+	background: #fff;
+	overflow: hidden;
+}
+.formContainer .creatAcountHeading {
+	font-size: 28px;
+    color: #656564;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+	margin-bottom: 22px;
+	border-bottom: 2px solid #cbcbcb;
+	background: #EFF0F2;
+}
+
+.formContainer #formCreatAccount {
+	padding: 0 20px;
+}
+
+.formContainer .fieldInputGroup {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+	gap: 5px;
+}
+
+.formContainer .fieldInputGroup .fieldContent {
+	width: calc(95% / 2);
+}
+.fieldContent {
+	margin-bottom: 10px;
+}
+.formContainer .fieldContent .fieldHeading {
+	display: block;
+    color: #24a98b;
+    font-size: 16px;
+    letter-spacing: .5px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.formContainer .fieldContent .formInputControl,
+.formContainer .fieldInputGroup .fieldContent select,
+.formContainer .fieldInputGroup .fieldContent input,
+textarea {
+	width: 100%;
+	padding: 7px;
+    font-size: 16px;
+    margin: 2px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    letter-spacing: .5px;
+}
+
+textarea {
+	resize: none;
+}
+
+.formContainer .fieldContent input:focus,
+textarea:focus {
+	border-color:  #24a98b;
+}
+.formContainer .fieldContent input:focus-visible,
+textarea:focus-visible {
+outline: 0;
+}
+
+select:focus-visible {
+	outline: 1px solid #24a98b;
+}
+
+.formContainer .fieldInputGroup .fieldContent .selectedContent .fieldHeading {
+	margin: 0;
+}
+
+.formContainer .fieldInputGroup .fieldContent .selectedContent .fieldGender,
+.formContainer .fieldInputGroup .fieldContent .selectHabbiesContainer label {
+	color: #323232;
+    text-transform: capitalize;
+    font-size: 17px;
+    letter-spacing: .5px;
+}
+
+.formContainer .fieldInputGroup .fieldContent .selectedContent input[type='radio'] {
+	appearance:none;
+	-webkit-appearance:none;
+	width:17px;
+	height:17px;
+	border:1px solid #323232;
+	background-color: #FFF;
+	border-radius:50%;
+	outline:none;
+	box-shadow:0 0 2px 0px #24a98b inset;
+	position: relative;
+	top: 2px;
+  }
+
+.formContainer .fieldInputGroup .fieldContent .selectedContent input[type='radio']:hover {
+	box-shadow:0 0 5px 0px #24a98b inset;
+  }
+
+.formContainer .fieldInputGroup .fieldContent .selectedContent input[type='radio']:before {
+	position: absolute;
+    content: '';
+    display: block;
+    width: 58%;
+    height: 58%;
+    /* margin: 0 auto; */
+    border-radius: 50%;
+    top: 21%;
+    right: 17%;
+}
+
+.formContainer .fieldInputGroup .fieldContent .selectedContent input[type='radio']:checked:before  {
+	background:#24a98b;
+}
+
+.formContainer .fieldInputGroup .fieldContent .selectHabbiesContainer input[type=checkbox] {
+	position: relative;
+	top: 3px;
+	width: 17px;
+    height: 17px;
+    border: 1px solid #323232;
+}
+
+.formContainer .fieldInputGroup .fieldContent .selectHabbiesContainer input[type=checkbox]:checked,
+.formContainer .fieldInputGroup .fieldContent  input[type=range] {
+	accent-color: #24a98b;
+}
+
+.formContainer .fieldInputGroup .fieldContent  input[type=range] {
+	position: relative;
+	height: 8px;
+	width: 80%;
+	margin-top: 10px;
+}
+
+
+.formContainer .fieldInputGroup .fieldContent  input[type=range]::before {
+	position: absolute;
+    right: -20%;
+	bottom: -8px;
+	content: "20K";
+    width: 40px;
+    height: 32px;
+    background-color: #24a98b;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.formContainer .fieldInputGroup #profilePicUpload {
+	font-size: 17px;
+	padding: 0;
+	border: 1px solid #ccc;
+	background-color: #FFf;
+}
+
+input::file-selector-button {
+	background-color: #24a98b;
+	color: #FFf;
+	border: 0;
+	padding: 8px;
+	margin-right: 10px;
+}
+
+.btnCreatAcountContainer {
+	text-align: right;
+	margin-bottom: 15px;
+}
+.btnCreatAcountContainer #createAccount {
+	background-color: #24a98b;
+    border: 1px solid #fff;
+    color: #FFf;
+    text-transform: capitalize;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 8px 21px;
+    border-radius: 5px;
+    font-weight: 700;
+	cursor: pointer;
+	transition: all .3s;
+}
+.btnCreatAcountContainer #createAccount:hover {
+	color: #24a98b;
+	border: 1px solid #24a98b;
+	background-color: #FFF;
+}
+
+@media screen and (max-width: 661px) {
+	.formContainer {
+		margin: 16px;
+	}
+	.formContainer .fieldInputGroup .fieldContent {
+		width: calc(100% / 1);
+	}
+}
+

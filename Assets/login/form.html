@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="icon/image.jpg" href="./Assets/Icon/earth_fav.jpg">
+		<link rel="stylesheet" href="../Assets/css/form.css">
+		<title>Creat Account Form</title>
+	</head>
+	<body>
+    <div class="formContainer">
+      <div class="formCreatAccountContainer">
+        <h2 class="creatAcountHeading">create account</h2>
+        <form id="formCreatAccount" name="firstForm">
+          <div class="fieldInputGroup">
+            <div class="fieldContent">
+              <label class="fieldHeading" for="firstName">first name <span>*</span></label>
+              <input type="text" class="formInputControl" id="firstName" placeholder="enter your first name" required autofocus>
+            </div>
+            <div class="fieldContent">
+              <label class="fieldHeading" for="lasName">last name <span>*</span></label>
+              <input type="text" class="formInputControl" id="lasName" placeholder="enter your last name">
+            </div>
+          </div>
+          <div class="fieldContent">
+            <label class="fieldHeading" for="email">Email <span>*</span></label>
+            <input type="email" class="formInputControl formEmailControl" id="email" placeholder="enter your email" required>
+          </div>
+          <div class="fieldInputGroup">
+            <div class="fieldContent">
+              <label class="fieldHeading" for="password">password <span>*</span></label>
+              <input type="password" class="formInputControl" id="password" placeholder="enter your password" required>
+            </div>
+            <div class="fieldContent">
+              <label class="fieldHeading" for="confirmPassword">confirm Password <span>*</span></label>
+              <input type="password" class="formInputControl" placeholder="confirm password" id="confirmPassword" required>
+            </div>
+          </div>
+          <div class="fieldInputGroup">
+            <div class="fieldContent">
+              <div class="selectedGenderContainer selectedContent">
+                <h4 class="fieldHeading">gender:</h4>
+                <label class="fieldGender" for="genderMale">
+                  <input type="radio" value="male" name="gender" id="genderMale"> <span>male</span>
+                </label>
+                <label class="fieldGender" for="genderFemale">
+                  <input type="radio" value="male" name="gender" id="genderFemale"> <span>female</span>
+                </label>
+              </div>
+            </div>
+            <div class="fieldContent">
+              <div class="selectHabbiesContainer selectedContent">
+                <h4 class="fieldHeading">habbies:</h4>
+                <label for="musicHabbit">
+                  <input type="checkbox" name="musicHabbit" id="musicHabbit"> <span>music</span>
+                </label>
+                <label for="sportHabbit">
+                  <input type="checkbox" name="sportHabbit" id="sportHabbit"> <span>sport</span>
+                </label>
+                <label for="traveltHabbit">
+                  <input type="checkbox" name="traveltHabbit" id="traveltHabbit"> <span>sport</span>
+                </label>
+                <label for="moviestHabbit">
+                  <input type="checkbox" name="moviestHabbit" id="moviestHabbit"> <span>movies</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="fieldInputGroup">
+            <div class="fieldContent">
+              <label class="fieldHeading" for="sourceIncomeName">source of income</label>
+              <select name="sourceIncome" id="sourceIncomeName">
+                <option value="1">Select Source Income</option>
+                <option value="1">Employed</option>
+                <option value="1">businessman</option>
+                <option value="1">Sport clup</option>
+                <option value="1">Real estate company owner</option>
+              </select>
+            </div>
+            <div class="fieldContent">
+              <label class="fieldHeading" for="salaryRange">income</label>
+              <input type="range" id="salaryRange" min="4" max="30" required>
+            </div>
+          </div>
+          <div class="fieldInputGroup">
+            <div class="fieldContent">
+              <label for="profilePicUpload" class="fieldHeading">upload profile picture</label>
+              <input type="file" name="picturProfile" id="profilePicUpload">
+            </div>
+            <div class="fieldContent">
+              <label class="fieldHeading" for="age">age</label>
+              <input type="number" value="20"  name="age" id="age" min="20" max="45">
+            </div>
+          </div>
+          <div class="fieldContent">
+            <label class="fieldHeading" for="bioText">bio</label>
+            <textarea name="bio" id="bioText" rows="5" placeholder="please talk about your skills "></textarea>
+          </div>
+          <div class="btnCreatAcountContainer">
+            <button id="createAccount" type="submit">create</button>
+          </div>
+        </form>
+      </div>
+		</div>
+	</body>
+</html>

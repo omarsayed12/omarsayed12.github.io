@@ -1,0 +1,134 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+.ourBeachContainer {
+	height: 100vh;
+	background: url('../imgs/beach.jpg') no-repeat fixed center;
+	background-size: cover;
+}
+
+.ourBeachContainer .ourBeachDescription {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+	background-color: rgb(255 255 255 / 15%);
+	padding: 3% 0;
+}
+
+.ourBeachContainer .ourBeachDescription h1 {
+	color: #EFF7CF;
+	margin: 0;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-shadow: 0 -1px 2px #671320, 0 2px 4px #943838;
+}
+
+
+.ourBeachContainer .ourBeachDescription h1 span{
+	color: #671320;
+}
+
+.ourBeachContainer .ourBeachDescription p {
+	color: #EFF7CF;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+	text-shadow: 0 2px 2px #550e19, 0 2px 2px #943838;
+	text-align: justify;
+	padding: 0 10%;
+	text-align-last: center;
+}
+
+.ourBeachContainer .ourBeachDescription a {
+	display: inline-block;
+	color: #EFF7CF;
+	text-shadow: 0 2px 2px #550e19, 0 2px 2px #943838;
+	border: 1px solid #550e19;
+	border-radius: 8px;
+	font-size: 22px;
+	padding: 10px;
+	width: 150px;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: all .4s;
+}
+
+.ourBeachContainer .ourBeachDescription a:nth-of-type(2) {
+	background-color: #c35050;
+	border: 1px solid #EFF7CF;
+}
+
+.ourBeachContainer .ourBeachDescription a:nth-of-type(2):hover {
+	background-color: #EFF7CF;
+	border: 1px solid #943838;
+	color: #943838;
+}
+.ourBeachContainer .ourBeachDescription a:hover {
+	background-color: #c35050;
+	border: 1px solid #EFF7CF;
+}
+
+.ourFeatures .ourFeaturesDetails {
+	font-size: 18px;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    padding: 30px 20px;
+    text-align: justify;
+	margin: 0;
+}
+
+.ourFeatures .ourFeaturesDetails:nth-of-type(1),
+.ourFeaturesItem p:nth-of-type(1),
+.ourFeaturesItem p:nth-of-type(3) {
+	background-color: #EFF7CF;
+	color: #a14444;
+}
+
+.ourFeatures .ourFeaturesDetails:nth-of-type(2),
+.ourFeaturesItem p:nth-of-type(2) {
+	background-color: #BC4E4E;
+	color: #EFF7CF;
+}
+
+.ourFeaturesItem {
+	display: flex;
+	flex-wrap: wrap;
+}
+.ourFeaturesItem p {
+	font-size: 17px;
+    line-height: 1.5;
+    letter-spacing: 1.3px;
+    text-align: justify;
+    padding: 15px;
+	margin: 0;
+	width: calc(100% / 3);
+}
+
+.footer .copyRight {
+	background: #BAD9B5;
+    margin: 0;
+    padding: 15px 0;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+	.ourFeaturesItem p {
+		width: 100%;
+	}
+}
