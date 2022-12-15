@@ -82,7 +82,7 @@ header .price-container .price-heading {
 	display: flex;
 	width: 100%;
 	gap: 25px;
-	padding: 30px;
+	padding: 30px 10px;
 }
 
 .price-lists::-webkit-scrollbar-track {
@@ -251,11 +251,8 @@ footer p a {
 		width: 100%;
 	}
 	.price-lists {
-		display: flex;
 		flex-wrap: nowrap;
 		overflow-x: auto;
-		padding: 30px;
-		gap: 30px;
 	}
 	.price-lists-item {
 		min-width: 300px;
