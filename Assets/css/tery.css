@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+/* Globla Style Start */
+* {
+	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	padding: 40px 0;
+	background: linear-gradient(274deg, rgba(114,67,206,1) 13%, rgba(185,67,155,1) 50%, rgba(237,56,99,1) 91%);
+}
+
+body::-webkit-scrollbar {
+	width: 11px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #FFC500;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+	background: rgba(237,56,99,1);
+}
+
+.container {
+	max-width: 1280px;
+	margin: auto;
+	padding: 0 2rem
+}
+
+a {
+	text-decoration: none
+}
+
+/* Globla Style Start *//
+
+/* navbar style start */
+.navTaps {
+	padding-bottom: 10px;
+}
+
+.navTaps .navTabItems {
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navTaps .navTabItems .navTabItem {
+	display: inline-block;
+	background: #FFC500;
+	padding: 7px 20px;
+	flex: 0 0 19%;
+	text-align: center;
+	transition: all .4s
+}
+
+.navTaps .navTabItems .navTabItem:hover {
+	outline: 3px solid #FFC500;
+	background: #fff;
+	color: #FFC500
+}
+
+.navTaps .navTabItems .navTabItem .navTapItemLink {
+	color: #322332;
+	font-size: 16.5px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.navTaps .navTabItems .navTabItem:hover .navTapItemLink {
+	color: #FFC500
+}
+
+/* terry taco joint section start */
+.tacoJoint {
+	margin: 30px 0
+}
+
+.tacoJoint .tacoJointContainer {
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	column-gap: 15px;
+}
+
+.tacoJoint .tacoJointContainer .tecoJointProduct {
+	position: relative;
+    height: 50vh;
+    background: url(../imgs/trey_res/food_1.jpg) no-repeat fixed;
+    background-size: cover;
+    flex: 0 0 70%;
+    background-position: 0 140%;
+}
+
+.tacoJoint .tacoJointContainer .tecoJointProduct .tecoJointProductHeader {
+	position: absolute;
+    top: 50%;
+    left: 4%;
+    transform: translate(0, -50%);
+}
+
+.tacoJoint .tacoJointContainer .tecoJointProduct .tecoJointProductHeaderName,
+.tacoJoint .tacoJointContainer .tecoJointProduct .tecoJointProductHeaderDesc {
+	background: #FFC500;
+	color: #322332;
+	margin: 7px 0;
+    padding: 4px;
+	text-transform: capitalize;
+	text-align: center
+}
+
+.tacoJoint .tacoJointContainer .tecoJointProduct .tecoJointProductHeaderDesc {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.tacoJoint .tacoJointContainer .tecoJointProductPrice {
+	flex: 0 0 29%;
+}
+
+.tecoJointProductPrice .tecoJointProductPriceItem {
+	max-width: 100%;
+    background: #FFC500;
+    padding: 26px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 48%;
+}
+
+.tecoJointProductPrice .tecoJointProductPriceItem:first-child {
+	margin-bottom: 14px
+}
+
+.tecoJointProductPrice .tecoJointProductPriceItem  .tecoJointProductPriceItemContent {
+	font-size: 50px;
+    font-weight: 300;
+	color: #322332
+}
+.tecoJointProductPrice .tecoJointProductPriceItem .tecoJointProductPriceItemType {
+	text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*  our services section start */
+
+.ourServices .ourServicesContent .ourServicesContentItems {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.ourServices .ourServicesContent .ourServicesContentItem {
+	width: 100%;
+    padding: 20px 10px;
+    flex: 0 0 24%;
+    text-align: center;
+    background: #fff;
+	cursor: pointer;
+	transition: box-shadow .9s , color .4s, border-raduis .3s, transform .3s;
+}
+
+.ourServices .ourServicesContent .ourServicesContentItem:hover {
+	box-shadow: 0 0 0 200px inset #ff658c, 0 0 14px 4px #ffffffde;
+    color: #FFF;
+	border-radius: 6px;
+    transform: scale(1.02) translate(4px, -5px);
+}
+.ourServices .ourServicesContent .ourServicesContentItem img {
+	max-width: 50px;
+	transition: all .4s
+}
+
+.ourServices .ourServicesContent .ourServicesContentItem:hover img {
+	transform: scale(1.2) rotate(-8deg)
+}
+.ourServices .ourServicesContent .ourServicesContentItem .ourServicesContentItemTitle {
+	padding: 20px 0;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.ourServices .ourServicesContent .ourServicesContentItem .ourServicesContentItemdescription {
+	font-size: 13px;
+	padding: 0 5px;
+    text-align: justify;
+    text-align-last: center;
+    color: #636161;
+    line-height: 1.6;
+    transition: color .4s;
+}
+.ourServices .ourServicesContent .ourServicesContentItem:hover .ourServicesContentItemdescription {
+	color:#FFF
+}
+
+/* our feature section start */
+.ourFeature {
+	margin: 30px 0;
+
+}
+
+.ourFeature .ourFeaatureContent {
+	display: flex;
+    align-items: center;
+	min-height: 50vh;
+	background: #fff;
+	overflow:hidden;
+	transition: all .4s
+}
+
+.ourFeature .ourFeaatureContent img{
+	height: 250px;
+}
+
+.ourFeature .ourFeaatureContent .ourFeaatureContentHeaderTitle {
+	text-transform: capitalize;
+    font-size: 25px;
+}
+.ourFeature .ourFeaatureContent .ourFeaatureContentHeaderDescription {
+	font-size: 15px;
+	padding-right: 10px;
+    line-height: 1.6;
+    margin: 15px 0;
+    font-weight: 600;
+	color: #322332;
+    text-transform: capitalize;
+}
+.ourFeature .ourFeaatureContent .ourFeaatureContentMore {
+    display: inline-block;
+	background: #FFC500;
+    color: #322332;
+    font-size17px: ;
+    font-size: 17px;
+    text-transform: capitalize;
+    padding: 7px 15px;
+    margin: 5px 0;
+	transition: all .4s;
+	border: 2px solid #FFC500;
+}
+
+.ourFeature .ourFeaatureContent .ourFeaatureContentMore:hover {
+	background: #fff;
+	color: #FFC500;
+	transform: scale(1.05)
+}
+.ourFeature .ourFeaatureContent .ourFeaatureContentMore i {
+	margin-leeft: 10px;
+	transition: all .3s;
+}
+
+.ourFeature .ourFeaatureContent .ourFeaatureContentMore:hover i {
+	transform: translateX(7px)
+}
+
+/* our instant grams start */
+.ourInstantGrams {}
+.ourInstantGrams .ourInstantGramsContent {
+
+}
+.ourInstantGrams .ourInstantGramsContentLinks{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 17px;
+}
+.ourInstantGrams .ourInstantGramsContentLinks .ourInstantGramsContentLink {
+	flex: 0 0 19%;
+    height: 32vh;
+}
+.ourInstantGrams .ourInstantGramsContentLink img {
+	width: 100%;
+	height: 100%;
+    object-fit: cover;
+}
+
+/* Media Query Start */
+
+@media screen and (max-width: 1024px) {
+	.container {
+		padding: 0 1rem
+	}
+}
+
+@media screen and (min-width: 768.98px) and (max-width: 900.98px) {
+	.ourInstantGrams .ourInstantGramsContentLinks .ourInstantGramsContentLink {
+		height: 25vh;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.navTaps .navTabItems {
+		justify-content: center;
+		gap: 12px;
+	}
+	.navTaps .navTabItems .navTabItem {
+		flex: 0 0 32%;
+	}
+	.tacoJoint .tacoJointContainer {
+		flex-direction: column
+	}
+	.tacoJoint .tacoJointContainer .tecoJointProduct {
+		flex: initial
+	}
+	.tacoJoint .tacoJointContainer .tecoJointProductPrice,
+	.tacoJoint .tacoJointContainer .tecoJointProductPrice {
+		display: flex;
+		justify-content: space-between;
+	}
+	.tacoJoint .tacoJointContainer .tecoJointProductPrice {
+		justify-content: space-between;
+		gap: 15px;
+		margin-top: 16px
+	}
+	.tecoJointProductPrice .tecoJointProductPriceItem {
+		width: 50%;
+	}
+	.ourServices .ourServicesContent .ourServicesContentItems {
+		row-gap: 16px;
+	}
+	.ourServices .ourServicesContent .ourServicesContentItem {
+		flex: 0 0 48.8%;
+	}
+	.ourFeature .ourFeaatureContent img {
+		height: 140px;
+	}
+	.ourInstantGrams .ourInstantGramsContentLinks .ourInstantGramsContentLink {
+		flex: 0 0 31.8%
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.navTaps .navTabItems {
+		gap: 10px
+	}
+	.navTaps .navTabItems .navTabItem {
+		flex: 0 0 48%
+	}
+	.navTaps .navTabItems .navTabItem:last-child {
+		flex: 0 0 100%
+	}
+	.ourFeaatureContent {
+		flex-direction: column;
+		padding: 15px 0
+	}
+	.ourServices .ourServicesContent .ourServicesContentItem {
+		flex: 0 0 100%
+	}
+	.ourFeaatureContentHeader {
+		text-align: center
+	}
+	.ourFeature .ourFeaatureContent .ourFeaatureContentHeaderDescription {
+		text-align: start;
+		padding: 0 15px
+	}
+	.ourInstantGrams .ourInstantGramsContentLinks .ourInstantGramsContentLink {
+		flex: 0 0 47.8%;
+		height: 22vh;
+	}
+}

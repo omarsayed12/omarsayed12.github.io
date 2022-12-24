@@ -26,7 +26,7 @@ header nav {
 	z-index: 1;
 	top: 0;
 	display: flex;
-	background-color: rgba(247, 246, 246, 0.89);
+	background-color: #f7f6f6e3;
 	box-shadow: 0px -1px 4px 0px #000000;
 	padding: 8px 15px;
 }
@@ -88,26 +88,26 @@ header .price-container .price-heading {
 .price-lists::-webkit-scrollbar-track {
 	background-color: #e6e6e6;
 	border-radius: 30px;
-  }
+}
 
-  .price-lists::-webkit-scrollbar {
+.price-lists::-webkit-scrollbar {
 	width: 10px;
-  }
+}
 
-  .price-lists::-webkit-scrollbar-thumb {
+.price-lists::-webkit-scrollbar-thumb {
 	box-shadow: inset 0 0 10px #ed6f38;
 	background-color: #ed6f38;
-  }
+}
 
-  .price-lists::-webkit-scrollbar {
+.price-lists::-webkit-scrollbar {
 	height: 4px;
 
-  }
+}
 
-  .price-lists::-webkit-scrollbar-thumb:horizontal {
+.price-lists::-webkit-scrollbar-thumb:horizontal {
 	background: #e6e6e6;
 	border-radius: 30px;
-  }
+}
 
 .price-lists-item {
 	width: 35%;
@@ -188,26 +188,26 @@ header .price-container .price-heading {
 }
 
 .btn-choose {
-    border: 1px solid #CCC;
-    background: #FFF;
-    padding: 11px 22px;
-    font-size: 19px;
-    font-weight: 600;
-    border-radius: 31px;
-    text-transform: capitalize;
-    margin: 20px 0;
+	border: 1px solid #CCC;
+	background: #FFF;
+	padding: 11px 22px;
+	font-size: 19px;
+	font-weight: 600;
+	border-radius: 31px;
+	text-transform: capitalize;
+	margin: 20px 0;
 }
 
 .get-start {
 	margin: 50px 0;
-    display: flex;
+	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
 
 .get-start .get-start-content {
-    flex: 0 0 45%;
-    width: 100%;
+	flex: 0 0 45%;
+	width: 100%;
 }
 
 .get-start .get-start-content-details {
@@ -250,10 +250,12 @@ footer p a {
 	.container {
 		width: 100%;
 	}
+
 	.price-lists {
 		flex-wrap: nowrap;
 		overflow-x: auto;
 	}
+
 	.price-lists-item {
 		min-width: 300px;
 	}
@@ -266,6 +268,7 @@ footer p a {
 		transform: translate(-50%, -50%);
 		width: 100%;
 	}
+
 	header .price-container .price-heading {
 		font-size: 27px;
 		padding: 0 10px;
@@ -273,21 +276,25 @@ footer p a {
 		width: 320px;
 		margin: auto;
 	}
+
 	.get-start .get-start-content {
 		flex: 0 0 100%;
 		padding: 0 20px;
 	}
+
 	.get-start .get-start-content-details h3 {
 		font-size: 22px;
 	}
+
 	footer p {
 		color: #717171;
 		font-size: 13px;
 		line-height: 1.7;
 		font-weight: 600;
-		padding-right:1px;
-		padding-left:1px;
+		padding-right: 1px;
+		padding-left: 1px;
 	}
+
 	header nav {
 		justify-content: space-between;
 	}
